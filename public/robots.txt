@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /clients
+Disallow: /projects
+Disallow: /time-tracking
+
+Sitemap: https://trackpay.in/sitemap.xml

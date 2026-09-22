@@ -1,0 +1,96 @@
+:root {
+  /* ---- Marketing / hero theme (dark) — unchanged from the original site ---- */
+  --bg-void: #050510;
+  --bg-navy: #0a0918;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-strong: rgba(255, 255, 255, 0.08);
+  --border-dark: rgba(255, 255, 255, 0.09);
+  --violet: #7c6cf6;
+  --violet-bright: #9b8cff;
+  --blue: #5b8cff;
+  --cyan: #6ee7f2;
+  --text-dark: #f4f3fb;
+  --text-dark-muted: #a19ec0;
+  --text-dark-faint: #6f6c8c;
+
+  /* ---- App theme (off-white + green) — used everywhere past the hero ----
+     Tokens tuned to the Material-3-style palette: a cooler off-white/mint
+     base with a deep, confident green as the accent. */
+  --off-white: #f5fbf4;
+  --off-white-alt: #eff5ee;
+  --card-bg: #ffffff;
+  --card-bg-alt: #e9efe9;
+  --green: #1f6f4a;
+  --green-dark: #005635;
+  --green-light: #2f8f5b;
+  --green-pale: #e4efe7;
+  --mint-badge: #a5f3c5;
+  --mint-badge-text: #005232;
+  --ink: #171d19;
+  --ink-muted: #57615b;
+  --ink-faint: #6f7a71;
+  --white: #ffffff;
+  --amber: #92640c;
+  --amber-bg: #fdf0da;
+  --border-light: #dee4dd;
+  --card-shadow: 0 1px 3px rgba(23, 29, 25, 0.07), 0 1px 2px rgba(23, 29, 25, 0.04);
+  --card-shadow-hover: 0 4px 14px rgba(23, 29, 25, 0.1);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --ease: cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--off-white);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .display {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* visible focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
