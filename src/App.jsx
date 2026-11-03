@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { AuthProvider } from './lib/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute'
 
@@ -35,6 +36,7 @@ function App() {
 
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Analytics />
       </AuthProvider>
     </BrowserRouter>
   )
