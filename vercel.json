@@ -1,5 +1,8 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "client/dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/((?!_vercel/|api/).*)", "destination": "/index.html" }
   ]
 }
